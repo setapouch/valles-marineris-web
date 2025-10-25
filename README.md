@@ -56,3 +56,7 @@ Pro vizualizaci a geologický kontext budou využita volně dostupná data z kos
 3. **USGS (U.S. Geological Survey) Astrogeology:**
     - **Typ dat:** **Geologické mapy** a sady minerálního složení.
     - **Význam:** Klíčové pro implementaci informační vrstvy o geologii a historii regionů.
+
+## 📂 Struktura repozitáře (plán)
+
+
