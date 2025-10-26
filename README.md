@@ -1,13 +1,61 @@
-Web bude zobrazovat interaktivní mapu marsovské lokality Valles Marineris, která je největší soustavou kaňonů ve sluneční soustavě. 
-Měl by být určen pro všechny zájemce o Mars,  astronomii a vesmír obecně.
+# 1️⃣ English:
 
-Minimální minimální funkční konfigurace:
+# 🚀 Valles Marineris Explorer: An Interactive Map of Mars
 
-- obecné informace o Valles marineris
-- 2D interaktivní mapa s informacemi o geologii a historii různých oblastí
-- informace o sondách zkoumajících tuto oblast (Mars Express, Mars Reconnaissance Orbiter)
+A web application focused on **Valles Marineris**, the largest canyon system in the Solar System, aiming to visualize and democratize access to scientific planetary data.
 
-Pravděpodobné použité technologie: html, css (Tailwind CSS), JavaScript (React + Next.js, node.js), MIcrosoft Azure 
+## 🎯 Target Audience
+
+The project is designed for **anyone interested in Mars, astronomy, and space in general**, providing detailed and engaging information about this unique Martian locality.
+
+---
+
+## ✨ Minimum Viable Product (MVP)
+
+The project prototype will include the following key functionalities:
+
+* **General Information about Valles Marineris:** A brief introduction, dimensions, and the significance of the canyon system.
+* **2D Interactive Map:** Allows users to explore different regions of Valles Marineris with a visual data overlay.
+    * Display of **geological information** (rock types, relief features) and **history** (formation, past water activity) upon user interaction.
+* **Information on Probes:** An overview of the main missions that studied the area:
+    * **Mars Express** (ESA)
+    * **Mars Reconnaissance Orbiter (MRO)** (NASA)
+
+---
+
+## 🛠️ Proposed Technologies
+
+The project will be developed focusing on modern web technologies and cloud scalability.
+
+* **Frontend & Interface:** `HTML`, `CSS` (Tailwind CSS), `JavaScript`
+* **Framework:** `React` / `Next.js` (for server-side rendering and static generation)
+* **Backend & Data:** `Node.js`
+* **Cloud & Infrastructure:** `Microsoft Azure`
+
+---
+
+## 🗺️ Key Mapping and Data Sources
+
+For visualization and geological context, freely available data from space agencies will be utilized:
+
+1.  **NASA MGS – MOLA (Mars Orbiter Laser Altimeter):**
+    * **Data Type:** **Topography** and **Digital Elevation Models (DEM)**.
+    * **Significance:** Essential for displaying the depth and structure of the canyons.
+2.  **NASA MRO – HiRISE/CTX (High Resolution Imaging Science Experiment):**
+    * **Data Type:** **High- and medium-resolution images**.
+    * **Significance:** Provides the visual basis for the map and ultra-detailed views of local geological features.
+3.  **USGS (U.S. Geological Survey) Astrogeology:**
+    * **Data Type:** **Geological maps** and mineral composition sets.
+    * **Significance:** Crucial for implementing the information layer on the geology and history of the regions.
+
+---
+
+## Getting Started
+
+Detailed instructions for installation and running the project can be found in `CONTRIBUTING.md`.
+
+
+# 2️⃣ Czech:
 
 # 🚀 Valles Marineris Explorer: Interaktivní mapa Marsu
 
