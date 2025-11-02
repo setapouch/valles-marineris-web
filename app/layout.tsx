@@ -7,18 +7,27 @@ export const metadata = {
     "Valles Marineris je systém kaňonů na Marsu, který se táhne přes čtvrtinu obvodu planety.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="cs">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body>
-        <div style={{
+        <div
+          style={{
             position: "absolute",
             top: "1rem",
             right: "2rem",
             display: "flex",
             gap: "1rem",
             fontFamily: "system-ui, sans-serif",
-          }}>
+          }}
+        >
           <LanguageSwitcher />
         </div>
         {children}
@@ -26,5 +35,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
-

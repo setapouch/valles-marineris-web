@@ -22,7 +22,7 @@ export default function LanguageSwitcher() {
   if (!isCzech && !isEnglish) {
     return (
       <nav>
-        <Link href="/cs">🇨🇿 Čeština</Link>
+        <Link href="/cs">🇬🇧 English</Link>
       </nav>
     );
   }
