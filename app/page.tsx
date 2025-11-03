@@ -1,28 +1,18 @@
-import IntroSection from "./components/IntroSectionCS";
+import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 
-export default function Home() {
-  return (
-    <main
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "100vh",
-        padding: "2rem",
-        fontFamily: "system-ui, sans-serif",
-      }}
-    >
-      <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-        Valles Marineris – Grand Canyon Marsu
-      </h1>
-      <p style={{ maxWidth: "600px", textAlign: "center", lineHeight: "1.6" }}>
-        Valles Marineris je obrovský systém kaňonů rozprostírající se přes
-        čtvrtinu obvodu planety Mars. Tento web nabízí přehledné informace, mapy
-        a vizualizace jedné z nejpůsobivějších geologických struktur ve Sluneční
-        soustavě.
-      </p>
-      <IntroSection />
-    </main>
-  );
+export default function RootPage() {
+  // získáme všechny hlavičky HTTP requestu
+  const acceptedLanguages = headers().get("accept-language");
+
+  // zjistíme, zda obsahuje češtinu (např. cs, cs-CZ)
+  const isCzech = acceptedLanguages?.toLowerCase().includes("cs");
+
+  // přesměrujeme podle preferovaného jazyka
+  if (isCzech) {
+    redirect("/cs");
+  } else {
+    redirect("/en");
+  }
 }
+
