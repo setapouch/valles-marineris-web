@@ -35,7 +35,7 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/_page_backup.tsx.bak"  ],
   "exclude": [
     "node_modules"
   ]

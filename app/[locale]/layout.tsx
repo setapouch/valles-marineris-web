@@ -1,4 +1,5 @@
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 
 interface Props {
@@ -8,7 +9,7 @@ interface Props {
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params; // ✅ počkáme na rozbalení Promise
-  const messages = useMessages();
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
